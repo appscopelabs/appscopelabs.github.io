@@ -1,23 +1,14 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>AppScope Labs — AI-Powered App Intelligence</title>
-  <meta name="description" content="Analyze any Android app in minutes. AI-powered competitive intelligence for developers and researchers." />
-
-  <meta property="og:title" content="AppScope Labs — AI-Powered App Intelligence" />
-  <meta property="og:description" content="Analyze any Android app in minutes. AI-powered competitive intelligence for developers and researchers." />
-  <meta property="og:type" content="website" />
-  <meta property="og:image" content="https://appscopelabs.github.io/images/appscope-og-1200x630.png" />
-  <meta property="og:url" content="https://appscopelabs.github.io/" />
-
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="AppScope Labs — AI-Powered App Intelligence" />
-  <meta name="twitter:description" content="Analyze any Android app in minutes. AI-powered competitive intelligence for developers and researchers." />
-  <meta name="twitter:image" content="https://appscopelabs.github.io/images/appscope-og-1200x630.png" />
-
+  <title>AppScope Labs — Intelligence Products for App Operators</title>
+  <meta name="description" content="AppScope Labs builds two focused products: AppScope Reports for deep app teardowns and AI Movers for weekly AI app market intelligence." />
   <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <script>
     tailwind.config = {
       theme: {
@@ -25,134 +16,123 @@
           colors: {
             primary: '#0A0E27',
             accent: '#3B82F6',
-            bgsoft: '#FAFAFA'
+            surface: '#FAFAFA'
           },
           fontFamily: {
-            sans: ['Inter', 'ui-sans-serif', 'system-ui', 'sans-serif']
+            sans: ['Inter', 'sans-serif']
+          },
+          boxShadow: {
+            card: '0 1px 2px rgba(10,14,39,0.06), 0 8px 24px rgba(10,14,39,0.05)'
           }
         }
       }
     }
   </script>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <style>
-    html { scroll-behavior: smooth; }
-    body { background: #FAFAFA; }
-  </style>
 </head>
-<body class="text-primary font-sans antialiased">
-  <header class="max-w-6xl mx-auto px-6 pt-8 pb-4 flex items-center justify-between">
-    <div class="flex items-center gap-3">
-      <div class="w-8 h-8 rounded-lg bg-primary grid place-items-center text-white font-bold">A</div>
-      <span class="font-semibold tracking-tight">AppScope Labs</span>
-    </div>
-    <a href="#pricing" class="text-sm font-medium hover:text-accent transition">Pricing</a>
+<body class="bg-surface text-primary font-sans antialiased">
+  <header class="sticky top-0 z-50 border-b border-slate-200/70 bg-surface/95 backdrop-blur">
+    <nav class="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
+      <a href="/" class="text-lg font-semibold tracking-tight">AppScope Labs</a>
+      <div class="hidden items-center gap-7 md:flex">
+        <a href="#products" class="text-sm font-medium text-slate-600 hover:text-primary">Products</a>
+        <a href="#architecture" class="text-sm font-medium text-slate-600 hover:text-primary">Architecture</a>
+        <a href="https://twitter.com/PhilipParkerAI" target="_blank" rel="noreferrer" class="text-sm font-medium text-slate-600 hover:text-primary">X</a>
+      </div>
+    </nav>
   </header>
 
   <main>
-    <section class="max-w-6xl mx-auto px-6 py-14 md:py-20 grid md:grid-cols-2 gap-12 items-center">
+    <section class="mx-auto grid max-w-6xl gap-10 px-6 pb-20 pt-16 md:grid-cols-[1.2fr,0.8fr] md:items-end md:pt-24">
       <div>
-        <p class="inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-wider text-accent bg-blue-50 px-3 py-1 rounded-full mb-6">Fast, clear app analytics</p>
-        <h1 class="text-4xl md:text-5xl font-extrabold leading-tight tracking-tight">Understand your app performance in minutes, not meetings.</h1>
-        <p class="mt-5 text-base md:text-lg text-slate-600 max-w-xl leading-relaxed">AppScope Labs turns noisy product and growth metrics into a clean, decision-ready dashboard — so your team can move faster with confidence.</p>
-        <div class="mt-8 flex flex-wrap gap-4">
-          <a href="https://buy.polar.sh/polar_cl_csvAPkijYgwl0BuPz4XD8eD2O91NOJIMUbIhD3hS7tk" class="bg-accent hover:bg-blue-600 text-white px-6 py-3 rounded-xl font-semibold transition shadow-sm">Start Analyzing</a>
-          <a href="#features" class="border border-slate-200 hover:border-slate-300 px-6 py-3 rounded-xl font-semibold bg-white">See Features</a>
-        </div>
+        <p class="mb-5 inline-flex rounded-full border border-accent/25 bg-accent/5 px-3 py-1 text-xs font-semibold uppercase tracking-wide text-accent">Brand Architecture — Option 1</p>
+        <h1 class="max-w-3xl text-4xl font-extrabold tracking-tight md:text-6xl">One company. Two focused intelligence products.</h1>
+        <p class="mt-6 max-w-2xl text-lg leading-relaxed text-slate-600">AppScope Labs is the company layer. Our products serve distinct jobs: <span class="font-semibold text-primary">AppScope Reports</span> for deep app teardown intelligence, and <span class="font-semibold text-primary">AI Movers</span> for recurring AI market signals.</p>
       </div>
-      <div class="rounded-2xl overflow-hidden border border-slate-200 bg-white shadow-sm">
-        <img src="./images/appscope-hero.png" alt="AppScope analytics dashboard preview" class="w-full h-full object-cover" />
+      <aside class="rounded-2xl border border-slate-200 bg-white p-6 shadow-card">
+        <p class="text-sm font-semibold text-slate-500">At a glance</p>
+        <dl class="mt-4 space-y-4 text-sm">
+          <div class="flex items-start justify-between gap-6 border-b border-slate-100 pb-3">
+            <dt class="text-slate-500">Company</dt>
+            <dd class="text-right font-semibold">AppScope Labs</dd>
+          </div>
+          <div class="flex items-start justify-between gap-6 border-b border-slate-100 pb-3">
+            <dt class="text-slate-500">Products</dt>
+            <dd class="text-right font-semibold">Reports + AI Movers</dd>
+          </div>
+          <div class="flex items-start justify-between gap-6">
+            <dt class="text-slate-500">AI Movers</dt>
+            <dd class="text-right font-semibold">$29/month subscription</dd>
+          </div>
+        </dl>
+      </aside>
+    </section>
+
+    <section id="products" class="mx-auto max-w-6xl px-6 pb-20">
+      <div class="mb-8 flex items-end justify-between gap-4">
+        <h2 class="text-2xl font-bold tracking-tight md:text-3xl">Products</h2>
+        <p class="text-sm text-slate-500">Each product has a clear promise and buyer.</p>
+      </div>
+      <div class="grid gap-6 md:grid-cols-2">
+        <article class="rounded-2xl border border-slate-200 bg-white p-7 shadow-card">
+          <p class="text-xs font-semibold uppercase tracking-wide text-slate-500">Product 01</p>
+          <h3 class="mt-2 text-2xl font-semibold tracking-tight">AppScope Reports</h3>
+          <p class="mt-3 text-slate-600">One-off deep analysis of Android apps: architecture decisions, SDK stack, monetization patterns, and technical signals.</p>
+          <ul class="mt-5 space-y-2 text-sm text-slate-600">
+            <li>• Best for due diligence and competitor research</li>
+            <li>• Report format with actionable technical detail</li>
+            <li>• Starting at $9.99 per report</li>
+          </ul>
+          <a href="/reports" class="mt-7 inline-flex items-center rounded-lg border border-slate-300 px-4 py-2 text-sm font-semibold text-primary hover:bg-slate-50">Explore Reports</a>
+        </article>
+
+        <article class="rounded-2xl border-2 border-accent/80 bg-white p-7 shadow-card">
+          <p class="text-xs font-semibold uppercase tracking-wide text-accent">Product 02</p>
+          <h3 class="mt-2 text-2xl font-semibold tracking-tight">AI Movers</h3>
+          <p class="mt-3 text-slate-600">Subscription intelligence on the AI app economy — weekly movement tracking, ranking shifts, and strategic market signals.</p>
+          <ul class="mt-5 space-y-2 text-sm text-slate-600">
+            <li>• Best for operators, founders, and investors</li>
+            <li>• Delivered weekly as a recurring intelligence layer</li>
+            <li>• <span class="font-semibold text-primary">$29/month</span> simple subscription</li>
+          </ul>
+          <a href="/ai-movers" class="mt-7 inline-flex items-center rounded-lg bg-accent px-4 py-2 text-sm font-semibold text-white hover:bg-blue-500">View AI Movers</a>
+        </article>
       </div>
     </section>
 
-    <section id="features" class="max-w-6xl mx-auto px-6 py-14 md:py-20">
-      <div class="max-w-2xl mb-10">
-        <h2 class="text-3xl md:text-4xl font-bold tracking-tight">Core capabilities built for product teams</h2>
-        <p class="mt-3 text-slate-600">Everything you need to monitor, diagnose, and improve app outcomes.</p>
-      </div>
-      <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
-        <article class="bg-white border border-slate-200 rounded-2xl p-6">
-          <h3 class="font-semibold text-lg">Real-Time Metrics</h3>
-          <p class="mt-2 text-sm text-slate-600">Track key performance signals live across installs, retention, and engagement.</p>
-        </article>
-        <article class="bg-white border border-slate-200 rounded-2xl p-6">
-          <h3 class="font-semibold text-lg">Anomaly Alerts</h3>
-          <p class="mt-2 text-sm text-slate-600">Spot unexpected drops or spikes automatically before they become expensive.</p>
-        </article>
-        <article class="bg-white border border-slate-200 rounded-2xl p-6">
-          <h3 class="font-semibold text-lg">Funnel Insights</h3>
-          <p class="mt-2 text-sm text-slate-600">Understand where users fall off and which journeys convert best.</p>
-        </article>
-        <article class="bg-white border border-slate-200 rounded-2xl p-6">
-          <h3 class="font-semibold text-lg">Actionable Reports</h3>
-          <p class="mt-2 text-sm text-slate-600">Share clean summaries your team can act on instantly.</p>
-        </article>
-      </div>
-    </section>
-
-    <section id="pricing" class="max-w-6xl mx-auto px-6 py-14 md:py-20">
-      <div class="max-w-2xl mb-10">
-        <h2 class="text-3xl md:text-4xl font-bold tracking-tight">Simple pricing</h2>
-        <p class="mt-3 text-slate-600">Start free, upgrade when you need deeper intelligence.</p>
-      </div>
-      <div class="grid md:grid-cols-3 gap-6">
-        <div class="bg-white border border-slate-200 rounded-2xl p-8">
-          <p class="text-sm font-semibold text-slate-500">Free</p>
-          <p class="text-4xl font-extrabold mt-2">$0<span class="text-base font-medium text-slate-500">/mo</span></p>
-          <ul class="mt-6 space-y-3 text-sm text-slate-700">
-            <li>• 1 workspace</li>
-            <li>• Basic analytics dashboard</li>
-            <li>• Weekly performance summary</li>
-          </ul>
-          <a href="https://buy.polar.sh/polar_cl_TcT4oElqdUmv3PZgy6PhxenlFCyrkkJomJFsm1Cb0GS" class="inline-block mt-6 border border-slate-300 hover:border-slate-400 px-5 py-2.5 rounded-xl font-semibold text-sm">Get Free</a>
+    <section id="architecture" class="mx-auto max-w-6xl px-6 pb-24">
+      <div class="rounded-2xl border border-slate-200 bg-white p-8 shadow-card md:p-10">
+        <h2 class="text-2xl font-bold tracking-tight">How the architecture works</h2>
+        <div class="mt-6 grid gap-6 md:grid-cols-3">
+          <div>
+            <p class="text-xs font-semibold uppercase tracking-wide text-slate-500">Layer 1</p>
+            <p class="mt-2 text-lg font-semibold">Company</p>
+            <p class="mt-2 text-sm text-slate-600">AppScope Labs owns trust, quality, and product standards.</p>
+          </div>
+          <div>
+            <p class="text-xs font-semibold uppercase tracking-wide text-slate-500">Layer 2</p>
+            <p class="mt-2 text-lg font-semibold">Products</p>
+            <p class="mt-2 text-sm text-slate-600">Reports and AI Movers are standalone offers with clear positioning.</p>
+          </div>
+          <div>
+            <p class="text-xs font-semibold uppercase tracking-wide text-slate-500">Layer 3</p>
+            <p class="mt-2 text-lg font-semibold">Conversion paths</p>
+            <p class="mt-2 text-sm text-slate-600">Dedicated pages drive each product's specific buying decision.</p>
+          </div>
         </div>
-        <div class="bg-primary text-white rounded-2xl p-8 border border-primary shadow-sm">
-          <p class="text-sm font-semibold text-blue-200">Pro</p>
-          <p class="text-4xl font-extrabold mt-2">$29<span class="text-base font-medium text-blue-200">/mo</span></p>
-          <ul class="mt-6 space-y-3 text-sm text-blue-50">
-            <li>• Unlimited workspaces</li>
-            <li>• Real-time anomaly detection</li>
-            <li>• Advanced funnel + cohort analysis</li>
-            <li>• Priority support</li>
-          </ul>
-          <a href="https://buy.polar.sh/polar_cl_csvAPkijYgwl0BuPz4XD8eD2O91NOJIMUbIhD3hS7tk" class="inline-block mt-6 bg-white text-primary px-5 py-2.5 rounded-xl font-semibold text-sm">Start Pro</a>
-        </div>
-        <div class="bg-white border border-slate-200 rounded-2xl p-8">
-          <p class="text-sm font-semibold text-slate-500">Annual</p>
-          <p class="text-4xl font-extrabold mt-2">$249<span class="text-base font-medium text-slate-500">/yr</span></p>
-          <ul class="mt-6 space-y-3 text-sm text-slate-700">
-            <li>• Everything in Pro</li>
-            <li>• 2 months free vs monthly</li>
-            <li>• Priority roadmap input</li>
-          </ul>
-          <a href="https://buy.polar.sh/polar_cl_EboDANA8dsURJ6rbNZI0BtsdSDNzFNw0gQJTV2XR6Rt" class="inline-block mt-6 border border-slate-300 hover:border-slate-400 px-5 py-2.5 rounded-xl font-semibold text-sm">Go Annual</a>
-        </div>
-      </div>
-    </section>
-
-    <section id="cta" class="max-w-6xl mx-auto px-6 pb-20">
-      <div class="bg-accent text-white rounded-2xl p-10 md:p-12 text-center">
-        <h2 class="text-3xl md:text-4xl font-bold tracking-tight">Ready to see what your app is really doing?</h2>
-        <p class="mt-3 text-blue-100">Launch AppScope Labs and start turning raw data into smarter decisions.</p>
-        <a href="https://buy.polar.sh/polar_cl_csvAPkijYgwl0BuPz4XD8eD2O91NOJIMUbIhD3hS7tk" class="inline-block mt-7 bg-white text-accent px-7 py-3 rounded-xl font-semibold hover:bg-slate-100 transition">Start Analyzing</a>
       </div>
     </section>
   </main>
 
-  <footer class="border-t border-slate-200 py-8">
-    <div class="max-w-6xl mx-auto px-6 flex flex-col md:flex-row gap-4 items-start md:items-center justify-between text-sm text-slate-600">
-      <div class="flex gap-5">
-        <a href="#" class="hover:text-accent">Privacy</a>
-        <a href="#" class="hover:text-accent">Terms</a>
-        <a href="#" class="hover:text-accent">Contact</a>
-      </div>
-      <div class="flex flex-col md:items-end">
-        <a href="https://x.com/PhilipParkerAI" class="hover:text-accent">@PhilipParkerAI</a>
-        <p>© 2026 AppScope Labs. All rights reserved.</p>
+  <footer class="border-t border-slate-200 bg-white">
+    <div class="mx-auto flex max-w-6xl flex-col gap-3 px-6 py-8 text-sm text-slate-600 md:flex-row md:items-center md:justify-between">
+      <p>© <span id="year"></span> AppScope Labs</p>
+      <div class="flex flex-wrap items-center gap-4">
+        <a href="/reports" class="hover:text-primary">AppScope Reports</a>
+        <a href="/ai-movers" class="hover:text-primary">AI Movers</a>
       </div>
     </div>
   </footer>
+
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
 </body>
 </html>
